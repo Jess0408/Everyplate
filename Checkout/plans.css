@@ -1,8 +1,11 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Gabriela&family=Josefin+Sans&family=Playfair+Display:ital,wght@1,400;1,500&display=swap");
+
+html {
+  box-sizing: border-box;
+  font-family: 'Josefin Sans', sans-serif;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 
 body {
@@ -11,20 +14,26 @@ body {
 
 header {
     background-color: #fff;
-    padding: 20px;
+    padding: 30px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    text-align: center;
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    position: relative; /* To position the icon */
+    align-items: center;
 }
 
 .header-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center; 
     align-items: center;
+    flex-grow: 1;
 }
 
 .menu-icon {
     font-size: 1.5rem;
     cursor: pointer;
+    position: absolute;
+    left: 20px;
 }
 
 nav ul {
