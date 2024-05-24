@@ -73,63 +73,70 @@ nav .line {
 }
 
 main {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
     padding: 1.25rem;
     margin: 1.25rem;
 }
 
-.plan-card {
-    background: linear-gradient(to bottom, #eef2db 30%, #ffffff 100%);
-    border-radius: 15px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    padding: 0.625rem;
-    width: 17.375rem;
-    height: 30.688rem;
-    margin: 0.625rem;
+.popular-section {
     text-align: center;
+    margin: 20px 0;
 }
 
-.plan-card a {
-    text-decoration: none;
-    color: #000;
+.popular-btn {
+    background-color: #C3D69B;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #FFF;
+    cursor: pointer;
 }
 
-.plan-card h2 {
-    font-size: 2rem;
-    opacity: 70%;
-    font-weight: lighter;
-    margin: 20px 0 10px 0;
+.day-title {
+    text-align: center;
+    font-size: 18px;
+    margin: 20px 0;
 }
 
-.plan-card ul {
-    list-style-type: disc;
-    margin: 10px;
-    text-align: left;
+.meals {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.meal-card {
+    background-color: #FFE5D4;
+    border-radius: 10px;
     padding: 20px;
-    display: grid;
-    grid-template-rows: 5.75rem 6.75rem 4.75rem;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-.plan-card li {
-    font-size: 1.35rem;
-    font-weight: lighter;
-    margin-left: 10px;
+.meal-card h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
 }
 
-.plan-card .total {
-    font-size: 1.75rem;
-    margin-top: 0.25rem;
+.meal-info p {
+    margin: 5px 0;
 }
 
-.plan-card .line {
-    border: none; /* 去掉默认边框 */
-    background-image: linear-gradient(to right, black 50%, rgba(255, 255, 255, 0) 0%);
-    background-size: 0.625rem 0.094rem; /* 线条长度和间距 */
-    background-repeat: repeat-x;
-    padding: 0 7.95rem 0 7.95rem;
-    margin-top: 1rem;
+.meal-info img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 10px 0;
+}
+
+.change-btn {
+    background-color: #C3D69B;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 14px;
+    color: #FFF;
+    cursor: pointer;
 }
 
 footer {
