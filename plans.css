@@ -69,8 +69,7 @@ nav line {
     width: 8.75rem;
     border: 1px solid #000;
     position: absolute;
-    margin-left: 1.563rem;
-    margin-top: 10px;
+    margin: 10px 1.563rem 0 0;
 }
 
 main {
@@ -82,10 +81,10 @@ main {
 }
 
 .plan-card {
-    background: linear-gradient(to bottom, #eef2db 0%, #ffffff 96%);
+    background: linear-gradient(to bottom, #eef2db 30%, #ffffff 100%);
     border-radius: 15px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    padding: 1.25rem;
+    padding: 0.625rem;
     width: 17.375rem;
     height: 30.688rem;
     margin: 0.625rem;
@@ -98,10 +97,10 @@ main {
 }
 
 .plan-card h2 {
-    font-size: 1.75rem;
+    font-size: 2rem;
     opacity: 70%;
-    font-weight: 400;
-    margin-bottom: 10px;
+    font-weight: lighter;
+    margin: 20px 0 10px 0;
 }
 
 .plan-card ul {
@@ -109,23 +108,28 @@ main {
     margin: 10px;
     text-align: left;
     padding: 20px;
+    display: grid;
+    grid-template-rows: 5.75rem 6.75rem 4.75rem;
 }
 
 .plan-card li {
-    margin-bottom: 5px;
+    font-size: 1.35rem;
+    font-weight: lighter;
+    margin-left: 10px;
 }
 
 .plan-card .total {
-    font-size: 1.2rem;
-    font-weight: bold;
-    margin-top: 10px;
+    font-size: 1.75rem;
+    margin-top: 0.25rem;
 }
 
 .plan-card .line {
-    display: flex;
-    justify-self: center;
-    width: 15rem;
-    border: 1px dashed #000;
+    border: none; /* 去掉默认边框 */
+    background-image: linear-gradient(to right, black 50%, rgba(255, 255, 255, 0) 0%);
+    background-size: 0.625rem 0.094rem; /* 线条长度和间距 */
+    background-repeat: repeat-x;
+    padding: 0 7.95rem 0 7.95rem;
+    margin-top: 1rem;
 }
 
 footer {
