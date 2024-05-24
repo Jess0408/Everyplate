@@ -23,7 +23,7 @@ header {
     padding-right: 1.875rem;
     padding-top: 2.188rem;
     padding-bottom: 0.313rem;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0.5px 40px rgba(0, 0, 0, 0.05);
 
     display: flex;
     justify-content: center; /* Center the content horizontally */
@@ -83,7 +83,7 @@ main {
 .plan-card {
     background: linear-gradient(to bottom, #eef2db 30%, #ffffff 100%);
     border-radius: 15px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.25);
     padding: 0.625rem;
     width: 17.375rem;
     height: 30.688rem;
@@ -135,7 +135,7 @@ main {
 footer {
     background-color: #fff;
     padding: 10px;
-    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 20px rgba(0, 0, 0, 0.25);
     border-top: 2px solid #E56E00;
     border-radius: 20px 20px 0 0;
     display: flex;
