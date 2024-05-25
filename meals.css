@@ -30,7 +30,7 @@ header {
 
     display: flex;
     justify-content: space-between;
-    position: relative;
+    position: fixed;
 }
 
 .header-container {
@@ -54,7 +54,7 @@ nav ul {
     display: flex;
     justify-content: center;
     gap: 12.5rem;
-    margin-top: 3.5rem;
+    margin-top: 8.625rem;
 }
 
 nav a {
