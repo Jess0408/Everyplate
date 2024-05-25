@@ -9,16 +9,17 @@
 </head>
 <body>
     <header>
-        <div class="menu-icon"><img src="Checkout/home.png" alt="home_icon" class="home_icon"></div>
+        <div><a href="#"><img src="Checkout/home.png" alt="home_icon" class="home_icon"></a></div>
         <div class="header-container">
             <h1>Check out</h1>
         </div>
+        <div><img src="Checkout/Cart.png" alt="cart_icon" class="cart_icon"></div>
     </header>
     
     <nav>
         <ul>
-            <li><a href="#">Plans<span class="line"></span></a></li>
-            <li><a href="#" class="current">Meals<span class="line"></span></a></li>
+            <li><a href="plans.html">Plans<span class="line"></span></a></li>
+            <li><a href="meals.html" class="current">Meals<span class="line"></span></a></li>
             <li><a href="#">Delivery Date<span class="line"></span></a></li>
             <li><a href="#">Payment<span class="line"></span></a></li>
             <li><a href="#">Confirmation</a></li>
@@ -42,8 +43,8 @@
 
                 <div class="meal-card">
                     <div class="meal-info">
-                        <p>Garlic Chicken Salad</p>
-                        <p>4.5★</p>
+                        <p class="name">Garlic Chicken Salad</p>
+                        <p class="rate">4.5★</p>
                         <img src="Checkout/salad.png" alt="Garlic Chicken Salad">
                     </div>
                     <button class="change-btn">Change</button>
@@ -51,8 +52,8 @@
     
                 <div class="meal-card">
                     <div class="meal-info">
-                        <p>Garlic Chicken Salad</p>
-                        <p>4.5★</p>
+                        <p class="name">Garlic Chicken Salad</p>
+                        <p class="rate">4.5★</p>
                         <img src="Checkout/salad.png" alt="Garlic Chicken Salad">
                     </div>
                     <button class="change-btn">Change</button>
@@ -64,8 +65,8 @@
 
                 <div class="meal-card">
                     <div class="meal-info">
-                        <p>Asian Beef Tacos</p>
-                        <p>4.7★</p>
+                        <p class="name">Asian Beef Tacos</p>
+                        <p class="rate">4.7★</p>
                         <img src="Checkout/taco.png" alt="Asian Beef Tacos">
                     </div>
                     <button class="change-btn">Change</button>
@@ -73,8 +74,8 @@
     
                 <div class="meal-card">
                     <div class="meal-info">
-                        <p>Asian Beef Tacos</p>
-                        <p>4.7★</p>
+                        <p class="name">Asian Beef Tacos</p>
+                        <p class="rate">4.7★</p>
                         <img src="Checkout/taco.png" alt="Asian Beef Tacos">
                     </div>
                     <button class="change-btn">Change</button>
@@ -86,16 +87,16 @@
 
                 <div class="meal-card">
                     <div class="meal-info">
-                        <p>Chicken Curry Rice</p>
-                        <p>4.9★</p>
+                        <p class="name">Chicken Curry Rice</p>
+                        <p class="rate">4.9★</p>
                         <img src="Checkout/rice.png" alt="Chicken Curry Rice">
                     </div>
                 </div>
     
                 <div class="meal-card">
                     <div class="meal-info">
-                        <p>Chicken Curry Rice</p>
-                        <p>4.9★</p>
+                        <p class="name">Chicken Curry Rice</p>
+                        <p class="rate">4.9★</p>
                         <img src="Checkout/rice.png" alt="Chicken Curry Rice">
                     </div>
                 </div>
@@ -105,7 +106,7 @@
     </main>
 
     <footer>
-        <button class="btn">Back</button>
+        <button onclick="document.location='plans.html'" class="btn">Back</button>
         <h2>$ 0</h2>
         <button class="btn">Next</button>
     </footer>
