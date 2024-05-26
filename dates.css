@@ -26,10 +26,11 @@ header {
     padding-top: 2.188rem;
     padding-bottom: 0.313rem;
     box-shadow: 0 0.5px 40px rgba(0, 0, 0, 0.05);
+    width: 100%;
 
     display: flex;
-    justify-content: center; /* Center the content horizontally */
-    position: relative;
+    justify-content: space-between;
+    position: fixed;
 }
 
 .header-container {
@@ -38,13 +39,12 @@ header {
     align-items: end;
 }
 
-.menu-icon {
-    cursor: pointer;
-    position: absolute;
-    left: 1.9rem;
+.home_icon {
+    width: 2.188rem;
+    height: 2.313rem;
 }
 
-.home_icon {
+.cart_icon {
     width: 2.188rem;
     height: 2.313rem;
 }
@@ -54,7 +54,7 @@ nav ul {
     display: flex;
     justify-content: center;
     gap: 12.5rem;
-    margin-top: 3.5rem;
+    margin-top: 8.625rem;
 }
 
 nav a {
@@ -81,15 +81,30 @@ footer {
     border-top: 2px solid #E56E00;
     border-radius: 20px 20px 0 0;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     position: fixed;
-    bottom: 0;
     width: 100%;
     height: 4.5rem;
+    bottom: 0;
 }
 
 footer h2 {
     font-size: 2rem;
     font-weight: 300;
+}
+
+footer .btn {
+    background-color: #FDE5C2;
+    width: 4.75rem;
+    height: 2.45rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.25);
+    padding: 10px;
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #000;
+    cursor: pointer;
+    margin: 0 3.5rem 0 3.5rem;
 }
