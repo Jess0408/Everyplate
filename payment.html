@@ -27,6 +27,82 @@
     </nav>
     
     <main>
+        <div class="info">
+            <section class="contact-info">
+                <h2>Contact</h2>
+                <form>
+                    <label for="title">Title</label>
+                    <input type="text" id="title" name="Title" value="Mr." class="value" onclick="clearInput(this)">
+
+                    <label for="surname">Surname</label>
+                    <input type="text" id="surname" name="Surname">
+
+                    <label for="mobile">Mobile</label>
+                    <input type="text" id="mobile" name="Mobile" value="04XXXXXXXX" class="value" onclick="clearInput(this)">
+
+                    <label for="home">Home</label>
+                    <input type="text" id="home" name="Home">
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="Email" value="123@abc.com" class="value" onclick="clearInput(this)">
+                </form>
+            </section>
+            <section class="address-info">
+                <h2>Address</h2>
+                <form>
+                    <label for="street">Street</label>
+                    <input type="text" id="street" name="Street" value="123 Bourke Street" class="value" onclick="clearInput(this)">
+
+                    <label for="suburb">Suburb</label>
+                    <input type="text" id="suburb" name="Suburb" value="Carlton" class="value" onclick="clearInput(this)">
+
+                    <label for="postal-code">Postal Code</label>
+                    <input type="text" id="postal-code" name="Postal-code" value="3xxx" class="value" onclick="clearInput(this)">
+
+                    <label for="postal-code">State</label>
+                    <input type="text" id="state" name="state" value="Victoria" class="value" onclick="clearInput(this)">
+                </form>
+            </section>
+            <section class="payment-info">
+                <h2>Payment Details</h2>
+                <div>
+                    <h4>Payment Options</h4>
+                    <button>Credit / Debit Card</button>
+                    <button>Paypal</button>
+                </div>
+                <div class="card">
+                    <h4>Card Details</h4>
+                    <form>
+                        <label for="street">Card Number</label>
+                        <input type="text" id="card-number" name="card-number" value="1234 5678 9012 3456" class="value" onclick="clearInput(this)">
+
+                        <label for="suburb">Expiration Date</label>
+                        <input type="text" id="expiration-date" name="expiration-date" value="MM/YYYY" class="value" onclick="clearInput(this)">
+
+                        <label for="postal-code">Name On Card</label>
+                        <input type="text" id="card-name" name="card-name" value="Name Surname" class="value" onclick="clearInput(this)">
+
+                        <label for="postal-code">CVV</label>
+                        <input type="number" id="cvv" name="cvv" value="123" class="value" onclick="clearInput(this)">
+                    </form>
+                </div>
+            </section>
+        </div>
+        <section class="plan-info">
+            <h2>Plan</h2>
+            <p class="plan">Full 2 Days Pack</p>
+            <ul>
+                <li>Average 1500 Calories per day</li>
+                <li>2 Std Breakfasts &amp; Lunches + 5 Dinners</li>
+            </ul>
+            <h2>Meals</h2>
+            <p class="plan">2 Days Std Meals</p>
+            <ul>
+                <li>No meal changed</li>
+            </ul>
+            <span class="line"></span>
+            <p class="total">Total $ 69.95</p>
+        </section>
     </main>
 
     <footer>
