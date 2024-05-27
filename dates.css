@@ -26,11 +26,17 @@ header {
     padding-top: 2.188rem;
     padding-bottom: 0.313rem;
     box-shadow: 0 0.5px 40px rgba(0, 0, 0, 0.05);
+    background-color: rgba(255, 255, 255, 0.3);
     width: 100%;
+    background-image: url('Checkout/background.png');
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: cover;
 
     display: flex;
     justify-content: space-between;
     position: fixed;
+    z-index: 1000;
 }
 
 .header-container {
@@ -72,6 +78,149 @@ nav .line {
     border: 1px solid #000;
     position: absolute;
     margin: 10px 0 0 1.563rem;
+}
+
+main {
+    padding: 3rem 12rem;
+    margin-bottom: 1rem;
+}
+
+.date-selection, .time-selection {
+    margin-bottom: 20px;
+    width: 100%;
+    gap: 1rem;
+    display: inline-flex;
+    align-items: center;
+}
+
+.date-selection h2, .time-selection h2 {
+    font-size: 1.75rem;
+    font-weight: lighter;
+}
+
+.date-options {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    width: 62.75rem;
+    height: 8.125rem;
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+.date-option {
+    font-size: 1.25rem;
+    font-weight: lighter;
+    width: 13.125rem;
+    height: 8.125rem;
+    border-radius: 20px;
+    padding: 1rem 0;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid rgba(212, 212, 212, 1);
+}
+
+.day {
+    font-size: 1.75rem;
+    font-weight: lighter;
+}
+
+.date-option.active, .time-option.active {
+    border: 1px solid rgba(255, 183, 116, 1);
+    background-color: rgba(255, 183, 116, 0.15);
+}
+
+hr {
+    border: 0.25rem solid #D9D9D9;
+    margin: 0.625rem 0;
+}
+
+.time-options {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    width: 62.75rem;
+    height: 2.688rem;
+    background-color: #fff;
+    border-radius: 20px;
+    margin-top: 0.5rem;
+}
+
+.time-options button {
+}
+
+.time-option {
+    font-size: 1.25rem;
+    font-weight: lighter;
+    width: 20rem;
+    height: 2.688rem;
+    border-radius: 20px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border: 0;
+    background-color: #fff;
+}
+
+.time-option p {
+    margin-top: 5px;
+}
+
+.time-icon {
+    width: 1.563rem;
+    height: 1.563rem;
+}
+
+.time {
+    font-weight: lighter;
+    font-size: 1.25rem;
+    color: rgba(0, 0, 0, 0.5);
+    margin-bottom: 1rem;
+}
+
+.morning {
+    padding: 0 10rem;
+    display: block;
+}
+
+.afternoon {
+    padding: 0 10rem;
+    display: none;
+}
+
+.evening {
+    padding: 0 10rem;
+    display: none;
+}
+
+.time-slot {
+    height: 4rem;
+    width: 63rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-bottom: 1.938rem;
+}
+
+.time-zone {
+    font-size: 1.75rem;
+}
+
+.window {
+    font-size: 1.5;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.price {
+    font-size: 1.65rem;
+    color: rgba(0, 0, 0, 0.8);
 }
 
 footer {
