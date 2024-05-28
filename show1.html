@@ -1,0 +1,202 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link href='http://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <div class="show">
+        <div class="stop">
+            <div class="wrap">
+                <div class="sflex">
+                    <h1>
+                        Chicken Curry Rice</h1>
+                    <a href="javascript:history.go(-1)">
+                        <img src="images/Multiply.png" /></a>
+                </div>
+            </div>
+        </div>
+        <div class="smain">
+            <div class="wrap">
+                <div class="showflex">
+                    <div class="img">
+                        <img src="images/2.jpg" />
+                    </div>
+                    <div class="txt">
+                        <h3>
+                            <p class="name">
+                                Food Details
+                            </p>
+                            <div class="xing">
+                                4.9
+                                <img src="images/Star(1).png" />
+                            </div>
+                        </h3>
+                        <p class="p2">
+                            A classis Indian favourite combining tender chicken pieces in an authentic mild
+                            creamy curry served with perfectly cooked rice and topped with a fried egg.</p>
+                        <div class="step">
+                            <div id="nav">
+                                <ul>
+                                    <li>
+                                        <h3>
+                                            Nutrition <span></span>
+                                        </h3>
+                                        <span>2340 Caloris 55.1 Protein </span>
+                                        <div class="p">
+                                            <table cellpadding="0" cellspacing="0" width="100%">
+                                                <tr>
+                                                    <td>
+                                                        &nbsp;
+                                                    </td>
+                                                    <td>
+                                                        Per Serve
+                                                    </td>
+                                                    <td>
+                                                        Per 100g
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        Energy
+                                                    </td>
+                                                    <td>
+                                                        2643Cal
+                                                    </td>
+                                                    <td>
+                                                        264Cal
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        Protein
+                                                    </td>
+                                                    <td>
+                                                        38.6g
+                                                    </td>
+                                                    <td>
+                                                        3.1g
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        Fat
+                                                    </td>
+                                                    <td>
+                                                        10.5g
+                                                    </td>
+                                                    <td>
+                                                        2.3g
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        Carbs
+                                                    </td>
+                                                    <td>
+                                                        33.3g
+                                                    </td>
+                                                    <td>
+                                                        9.4g
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        Fibre
+                                                    </td>
+                                                    <td>
+                                                        4.5g
+                                                    </td>
+                                                    <td>
+                                                        1.3g
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        Sodium
+                                                    </td>
+                                                    <td>
+                                                        993mg
+                                                    </td>
+                                                    <td>
+                                                        221mg
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <h3>
+                                            Ingredients <span></span>
+                                        </h3>
+                                        <span>Click here to view any allergens </span>
+                                        <div class="p">
+                                            <p>
+                                                Allergens: Peanuts, Soy, Sesame, Wheat, Milk
+                                                <br />
+                                                Produced in a facility that processes eggs, fish, milk, peanuts, sesame,
+                                                shellfish, soy, tree nuts, and wheat.
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <h3>
+                                            Steps <span></span>
+                                        </h3>
+                                        <span>Click here to view recipe </span>
+                                        <div class="p flex">
+                                            <div class="unm">
+                                                <p>1</p>
+                                            </div>
+                                            <div>
+                                                <p>
+                                                    After the beef is cooked on medium-high heat, slowly fry. When the
+                                                    meat is about
+                                                    80% cooked, add the seasoning powder together and continue to stir
+                                                    fry until it
+                                                    is fully cooked. After fully cooked, add a little warm water, and
+                                                    boil the water
+                                                    after 10 minutes to dry, about a little water foam over the meat.
+                                                    Bring the water
+                                                    to a boil and simmer on medium heat for six or seven minutes.
+                                                    <br />
+                                                    <img src="images/steps.png" />
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <script>
+
+                                var nav = document.getElementById('nav');
+                                var oNav = nav.getElementsByTagName('li');
+                                for (var i = 0; i < oNav.length; i++) {
+                                    oNav[i].index = i;
+
+                                    oNav[i].onclick = function () {
+
+                                        if (this.className == 'act') {
+
+                                            this.className = '';
+
+                                        }
+                                        else {
+                                            this.className = 'act';
+                                        }
+                                    }
+                                } 
+                            </script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
