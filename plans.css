@@ -77,7 +77,6 @@ nav .line {
 main {
     display: flex;
     justify-content: space-around;
-    flex-wrap: wrap;
     padding: 1.25rem;
     margin: 1.25rem;
 }
@@ -90,7 +89,14 @@ main {
     width: 17.375rem;
     height: 30.688rem;
     margin: 0.625rem;
+
     text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.card :hover {
+    transform: translateY(-10px);
 }
 
 .plan-card a {
