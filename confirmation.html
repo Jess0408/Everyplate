@@ -9,20 +9,87 @@
 </head>
 <body>
     <header>
-        <div><a href="#"><img src="Checkout/home.png" alt="home_icon" class="home_icon"></a></div>
+        <div class="menu-icon"><a href="payment.html"><img src="Checkout/Left.png" alt="home_icon" class="home_icon"></a></div>
         <div class="header-container">
-            <h1>Check out</h1>
+            <h1>Confirmation</h1>
         </div>
-        <div><img src="Checkout/Cart.png" alt="cart_icon" class="cart_icon"></div>
     </header>
 
     <main>
+        <div class="content">
+            <div class="section contact">
+                <h2>Contact</h2>
+                <section class="contact-info">
+                    <div class="info-type">
+                        <p>Title</p>
+                        <p>Surname</p>
+                        <p>Mobile</p>
+                    </div>
+                    <div class="info">
+                        <p>Mr</p>
+                        <p>Smith</p>
+                        <p>0493123456</p>
+                    </div>
+                </section>
+            </div>
+            <div class="section address">
+                <h2>Address</h2>
+                <section class="contact-info">
+                    <div class="info-type">
+                        <p>Street</p>
+                        <p>Suburb</p>
+                        <p>Postal Code</p>
+                        <p>State</p>
+                    </div>
+                    <div class="info">
+                        <p>12 Leicester St</p>
+                        <p>Carlton</p>
+                        <p>3053</p>
+                        <p>VIC</p>
+                    </div>
+                </section>
+            </div>
+            <div class="section payment">
+                <h2>Payment Details</h2>
+                <h4>Payment Options</h4>
+                <button class="payment-option">Credit / Debit Card</button>
+                <button class="payment-option">PayPal</button>
+                <h4>Card Details</h4>
+                <section class="payment-info">
+                    <div class="info-type">
+                        <p>Card Number</p>
+                        <p>Expiration Date</p>
+                        <p>Name On Card</p>
+                        <p>CVV</p>
+                    </div>
+                    <div class="info">
+                        <p>1234 5678 9012 3456</p>
+                        <p>Jack Smith</p>
+                        <p>08/2025</p>
+                        <p>732</p>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <div class="plan">
+            <h2>Plan</h2>
+            <p class="pack">Full 2 Days Pack</p>
+            <ul>
+                <li>Average 1500 Calories per day</li>
+                <li>2 Std Breakfasts & Lunches + 5 Dinners</li>
+            </ul>
+            <h2>Meals</h2>
+            <p class="pack">2 Days Std Meals</p>
+            <ul>
+                <li>No meal changed</li>
+            </ul>
+            <span class="line"></span>
+            <p class="total">Total $ 69.95</p>
+        </div>
     </main>
 
     <footer>
-        <button onclick="document.location='plans.html'" class="btn">Back</button>
-        <h2>$ 0</h2>
-        <button class="btn">Next</button>
+        <button onclick="document.location='success.html'" class="btn">Pay</button>
     </footer>
 </body>
 </html>
