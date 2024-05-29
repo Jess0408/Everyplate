@@ -127,7 +127,12 @@ nav a {
     color: #000;
     font-size: 1.55rem;
 }
+
 .current {
+    font-weight: bold;
+}
+
+.previous:hover {
     text-decoration: underline;
 }
 
@@ -173,16 +178,17 @@ form {
 }
 
 .info input {
-    width: 25rem;
+    width: 24rem;
     height: 2.5rem;
     border-radius: 10px;
     border: 1px solid black;
     padding: 5px;
+    font-size: 1.45rem;
+    outline: none;
 }
 
-.value {
-    color: #AFAFAF;
-    font-size: 1rem;
+.small-info {
+    padding: 1em .5em;
 }
 
 .info section {
@@ -325,4 +331,9 @@ footer .btn {
     color: #000;
     cursor: pointer;
     margin: 0 3.5rem 0 3.5rem;
+}
+
+footer .btn:hover {
+    background-color: white;
+    border: 1.5px solid #FDE5C2;
 }

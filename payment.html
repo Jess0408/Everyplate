@@ -30,9 +30,9 @@
     
     <nav>
         <ul>
-            <li><a href="plans.html">Plans<span class="line"></span></a></li>
-            <li><a href="meals.html">Meals<span class="line"></span></a></li>
-            <li><a href="dates.html">Delivery Date<span class="line"></span></a></li>
+            <li><a href="plans.html" class="previous">Plans<span class="line"></span></a></li>
+            <li><a href="meals.html" class="previous">Meals<span class="line"></span></a></li>
+            <li><a href="dates.html" class="previous">Delivery Date<span class="line"></span></a></li>
             <li><a href="payment.html" class="current">Payment<span class="line"></span></a></li>
             <li><a href="#">Confirmation</a></li>
         </ul>
@@ -40,42 +40,42 @@
     
     <main>
         <div class="info">
-            <section class="contact-info">
+            <section class="contact-info small-info">
                 <h2>Contact</h2>
                 <form>
                     <label for="title">Title</label>
-                    <input type="text" id="title" name="Title" value="Mr." class="value" onclick="clearInput(this)">
+                    <input type="text" id="title" name="Title" placeholder="Mr." onclick="clearInput(this)">
 
                     <label for="surname">Surname</label>
                     <input type="text" id="surname" name="Surname">
 
                     <label for="mobile">Mobile</label>
-                    <input type="text" id="mobile" name="Mobile" value="04XXXXXXXX" class="value" onclick="clearInput(this)">
+                    <input type="text" id="mobile" name="Mobile" placeholder="04XXXXXXXX" onclick="clearInput(this)">
 
                     <label for="home">Home</label>
                     <input type="text" id="home" name="Home">
 
                     <label for="email">Email</label>
-                    <input type="email" id="email" name="Email" value="123@abc.com" class="value" onclick="clearInput(this)">
+                    <input type="email" id="email" name="Email" placeholder="123@abc.com" onclick="clearInput(this)">
                 </form>
             </section>
-            <section class="address-info">
+            <section class="address-info small-info">
                 <h2>Address</h2>
                 <form>
                     <label for="street">Street</label>
-                    <input type="text" id="street" name="Street" value="123 Bourke Street" class="value" onclick="clearInput(this)">
+                    <input type="text" id="street" name="Street" placeholder="123 Bourke Street" onclick="clearInput(this)">
 
                     <label for="suburb">Suburb</label>
-                    <input type="text" id="suburb" name="Suburb" value="Carlton" class="value" onclick="clearInput(this)">
+                    <input type="text" id="suburb" name="Suburb" placeholder="Carlton" onclick="clearInput(this)">
 
                     <label for="postal-code">Postal Code</label>
-                    <input type="text" id="postal-code" name="Postal-code" value="3xxx" class="value" onclick="clearInput(this)">
+                    <input type="text" id="postal-code" name="Postal-code" placeholder="3xxx" onclick="clearInput(this)">
 
                     <label for="postal-code">State</label>
-                    <input type="text" id="state" name="state" value="Victoria" class="value" onclick="clearInput(this)">
+                    <input type="text" id="state" name="state" placeholder="Victoria" onclick="clearInput(this)">
                 </form>
             </section>
-            <section class="payment-info">
+            <section class="payment-info small-info">
                 <h2>Payment Details</h2>
                 <div>
                     <h4>Payment Options</h4>
@@ -86,16 +86,16 @@
                     <h4>Card Details</h4>
                     <form>
                         <label for="street">Card Number</label>
-                        <input type="text" id="card-number" name="card-number" value="1234 5678 9012 3456" class="value" onclick="clearInput(this)">
+                        <input type="text" id="card-number" name="card-number" placeholder="1234 5678 9012 3456" onclick="clearInput(this)">
 
                         <label for="suburb">Expiration Date</label>
-                        <input type="text" id="expiration-date" name="expiration-date" value="MM/YYYY" class="value" onclick="clearInput(this)">
+                        <input type="text" id="expiration-date" name="expiration-date" placeholder="MM/YYYY" onclick="clearInput(this)">
 
                         <label for="postal-code">Name On Card</label>
-                        <input type="text" id="card-name" name="card-name" value="Name Surname" class="value" onclick="clearInput(this)">
+                        <input type="text" id="card-name" name="card-name" placeholder="Name Surname" onclick="clearInput(this)">
 
                         <label for="postal-code">CVV</label>
-                        <input type="number" id="cvv" name="cvv" value="123" class="value" onclick="clearInput(this)">
+                        <input type="number" id="cvv" name="cvv" placeholder="123" onclick="clearInput(this)">
                     </form>
                 </div>
             </section>
