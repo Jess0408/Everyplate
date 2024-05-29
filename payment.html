@@ -9,12 +9,24 @@
 </head>
 <body>
     <header>
-        <div><a href="#"><img src="Checkout/home.png" alt="home_icon" class="home_icon"></a></div>
+        <div class="menu-icon"><img src="Checkout/home.png" alt="home_icon" class="home_icon"></div>
         <div class="header-container">
             <h1>Check out</h1>
         </div>
-        <div><img src="Checkout/Cart.png" alt="cart_icon" class="cart_icon"></div>
     </header>
+
+    <div id="id01" class="modal">
+        <form class="modal-content">
+          <div class="container">
+            <h1>Will not Save!</h1>
+      
+            <div class="clearfix">
+              <button type="button" class="deletebtn" onclick="document.location='index.html'">Continue</button>
+              <button type="button" class="cancelbtn" onclick="document.getElementById('id01').style.display='none'">Cancel</button>
+            </div>
+          </div>
+        </form>
+      </div>
     
     <nav>
         <ul>
@@ -110,5 +122,7 @@
         <h2>$ 0</h2>
         <button onclick="document.location='confirmation.html'" class="btn">Next</button>
     </footer>
+
+    <script src="payment.js"></script>
 </body>
 </html>

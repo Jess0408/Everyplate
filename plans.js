@@ -2,7 +2,7 @@
 // Get the modal
 var modal = document.getElementById('id01');
 
-var home_icon = document.getElementsByClassName('menu-icon');
+var home_icon = document.getElementsByClassName('menu-icon')[0];
 
 home_icon.onclick = function() {
   modal.style.display = "block";

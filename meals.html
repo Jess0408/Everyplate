@@ -9,7 +9,7 @@
 </head>
 <body>
     <header>
-        <div class="menu-icon" onclick="document.getElementById('id01').style.display='block'"><img src="Checkout/home.png" alt="home_icon" class="home_icon"></div>
+        <div class="menu-icon"><img src="Checkout/home.png" alt="home_icon" class="home_icon"></div>
         <div class="header-container">
             <h1>Check out</h1>
         </div>
@@ -17,7 +17,7 @@
     </header>
     
     <div id="id01" class="modal">
-        <form class="modal-content" action="/action_page.php">
+        <form class="modal-content">
           <div class="container">
             <h1>Will not Save!</h1>
       
@@ -44,13 +44,13 @@
     </div>
 
     <div id="pre" class="preference">
-        <form class="modal-content" action="/action_page.php">
+        <form class="modal-content">
             <div class="container">
                 <button class="option">Popular</button>
                 <button class="option">Vegitarian</button>
                 <button class="option">Extra Size</button>
                 <button class="option">Customize</button>
-                <p>Close</p>
+                <button class="close-btn" onclick="document.getElementById('pre').style.display='none'">Close</button>
             </div>
           </div>
         </form>
@@ -136,6 +136,7 @@
         <h2>$ 59.95</h2>
         <button onclick="document.location='dates.html'" class="btn">Next</button>
     </footer>
+    
+    <script src="meals.js"></script>
 </body>
-<script src="meals.js"></script>
 </html>
