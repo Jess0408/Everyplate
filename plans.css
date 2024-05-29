@@ -48,6 +48,65 @@ header {
     width: 2.188rem;
     height: 2.313rem;
 }
+  
+  /* Float cancel and delete buttons and add an equal width */
+  .cancelbtn, .deletebtn {
+    border: 0;
+    float: left;
+    width: 50%;
+    padding-top: 2.313rem;
+    background-color: white;
+    font-size: 2.25rem;
+    font-weight: lighter;
+  }
+  
+  /* Add a color to the cancel button */
+  .cancelbtn {
+    color: black;
+    padding-left: 7rem;
+  }
+  
+  /* Add a color to the delete button */
+  .deletebtn {
+    color: #FF1818;
+    padding-right: 7rem;
+  }
+  
+  /* Add padding and center-align text to the container */
+  .container {
+    text-align: center;
+  }
+
+  .container h1 {
+    font-size: 4rem;
+    font-weight: bold;
+  }
+  
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding-top: 50px;
+    transition: 600ms;
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: white;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border-radius: 20px;
+    width: 37.5rem; /* Could be more or less, depending on screen size */
+    height: 27rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
 nav ul {
     list-style: none;

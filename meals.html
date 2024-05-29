@@ -9,16 +9,29 @@
 </head>
 <body>
     <header>
-        <div><a href="#"><img src="Checkout/home.png" alt="home_icon" class="home_icon"></a></div>
+        <div class="menu-icon" onclick="document.getElementById('id01').style.display='block'"><img src="Checkout/home.png" alt="home_icon" class="home_icon"></div>
         <div class="header-container">
             <h1>Check out</h1>
         </div>
         <div><img src="Checkout/Cart.png" alt="cart_icon" class="cart_icon"></div>
     </header>
     
+    <div id="id01" class="modal">
+        <form class="modal-content" action="/action_page.php">
+          <div class="container">
+            <h1>Will not Save!</h1>
+      
+            <div class="clearfix">
+              <button type="button" class="deletebtn" onclick="document.location='index.html'">Continue</button>
+              <button type="button" class="cancelbtn" onclick="document.getElementById('id01').style.display='none'">Cancel</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    
     <nav>
         <ul>
-            <li><a href="plans.html">Plans<span class="line"></span></a></li>
+            <li><a href="plans.html" class="previous">Plans<span class="line"></span></a></li>
             <li><a href="meals.html" class="current">Meals<span class="line"></span></a></li>
             <li><a href="#">Delivery Date<span class="line"></span></a></li>
             <li><a href="#">Payment<span class="line"></span></a></li>
@@ -27,7 +40,20 @@
     </nav>
 
     <div class="popular-section">
-        <button class="popular-btn">Popular</button>
+        <button class="popular-btn" onclick="document.getElementById('pre').style.display='block'">Popular</button>
+    </div>
+
+    <div id="pre" class="preference">
+        <form class="modal-content" action="/action_page.php">
+            <div class="container">
+                <button class="option">Popular</button>
+                <button class="option">Vegitarian</button>
+                <button class="option">Extra Size</button>
+                <button class="option">Customize</button>
+                <p>Close</p>
+            </div>
+          </div>
+        </form>
     </div>
 
     <main>
@@ -107,8 +133,9 @@
 
     <footer>
         <button onclick="document.location='plans.html'" class="btn">Back</button>
-        <h2>$ 0</h2>
+        <h2>$ 59.95</h2>
         <button onclick="document.location='dates.html'" class="btn">Next</button>
     </footer>
 </body>
+<script src="meals.js"></script>
 </html>

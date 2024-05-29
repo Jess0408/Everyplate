@@ -49,6 +49,64 @@ header {
     height: 2.313rem;
 }
 
+/* Float cancel and delete buttons and add an equal width */
+.cancelbtn, .deletebtn {
+    border: 0;
+    float: left;
+    width: 50%;
+    padding-top: 2.313rem;
+    background-color: white;
+    font-size: 2.25rem;
+    font-weight: lighter;
+}
+  
+/* Add a color to the cancel button */
+.cancelbtn {
+    color: black;
+    padding-left: 7rem;
+}
+  
+/* Add a color to the delete button */
+.deletebtn {
+    color: #FF1818;
+    padding-right: 7rem;
+}
+  
+/* Add padding and center-align text to the container */
+.container {
+    text-align: center;
+}
+
+.container h1 {
+    font-size: 4rem;
+    font-weight: bold;
+}
+  
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1001; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    background-color: rgba(0, 0, 0, 0.5);
+    padding-top: 50px;
+    transition: 600ms;
+}
+  
+  /* Modal Content/Box */
+.modal-content {
+    background-color: white;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border-radius: 20px;
+    width: 37.5rem; /* Could be more or less, depending on screen size */
+    height: 27rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .cart_icon {
     width: 2.188rem;
     height: 2.313rem;
@@ -67,7 +125,12 @@ nav a {
     color: #000;
     font-size: 1.55rem;
 }
+
 .current {
+    text-decoration: underline;
+}
+
+.previous:hover {
     text-decoration: underline;
 }
 
@@ -96,6 +159,60 @@ nav .line {
     font-weight: bold;
     color: #FFF;
     cursor: pointer;
+}
+
+.popular-btn:hover {
+    color: #000;
+}
+
+.preference {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1001; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    background-color: rgba(0, 0, 0, 0.5);
+    padding-top: 50px;
+    transition: 600ms;
+}
+
+.preference .modal-content {
+    background-color: white;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border-radius: 20px;
+    width: 37.5rem; /* Could be more or less, depending on screen size */
+    height: 27rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.preference .container {
+    text-align: center;
+}
+
+.preference button {
+    width: 13.5rem;
+    height: 2.75rem;
+    background-color: rgba(173, 193, 120, 0.8);
+    border: 0.063rem solid rgba(173, 193, 120, 0.9);
+    border-radius: 20px;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.25);
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #FFF;
+    cursor: pointer;
+}
+
+.preference button:hover {
+    color: #000;
+}
+
+.preference .container p {
+    font-size: 4rem;
+    font-weight: bold;
 }
 
 main {
@@ -173,6 +290,11 @@ main {
     font-size: 1.25rem;
     color: #000000;
     text-align: center;
+}
+
+.change-btn:hover {
+    color: white;
+    font-weight: bold;
 }
 
 footer {
