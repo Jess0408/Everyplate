@@ -8,7 +8,7 @@
 body {
     display: flex;
     flex-direction: column;
-    background-image: url('Checkout/background.png');
+    background-image: url('../Checkout/background.png');
     background-repeat: no-repeat;
     background-position: right top;
     background-attachment: fixed;
@@ -27,7 +27,7 @@ header {
     padding-bottom: 0.313rem;
     box-shadow: 0 0.5px 40px rgba(0, 0, 0, 0.05);
     width: 100%;
-    background-image: url('Checkout/background.png');
+    background-image: url('../Checkout/background.png');
     background-repeat: no-repeat;
     background-position: right top;
     background-size: cover;

@@ -8,7 +8,7 @@
 body {
     display: flex;
     flex-direction: column;
-    background-image: url('Checkout/background.png');
+    background-image: url('../Checkout/background.png');
     background-repeat: no-repeat;
     background-position: right top;
     background-attachment: fixed;

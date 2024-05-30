@@ -12,7 +12,7 @@ body {
     align-items: center;
     height: 100vh;
 
-    background-image: url('Checkout/background.png');
+    background-image: url('../Checkout/background.png');
     background-repeat: no-repeat;
     background-position: right top;
     background-attachment: fixed;
