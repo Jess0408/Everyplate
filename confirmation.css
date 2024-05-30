@@ -72,7 +72,7 @@ main {
 }
 
 .contact {
-    height: 14.375rem;
+    height: auto;
 }
 
 .contact-info {
@@ -81,11 +81,11 @@ main {
 }
 
 .address {
-    height: 18rem;
+    height: auto;
 }
 
 .payment {
-    height: 25rem;
+    height: auto;
 }
 
 .content h2 {
@@ -127,6 +127,11 @@ main {
     font-size: 1rem;
     font-weight: lighter;
     color: rgba(0, 0, 0, 0.8);
+}
+
+.payment-option.active {
+    border-color: rgba(255, 183, 116, 1);
+    background-color: rgba(255, 183, 116, 0.15);
 }
 
 .payment-info {
@@ -221,4 +226,9 @@ footer .btn {
     color: #000;
     cursor: pointer;
     margin: 0 3.5rem 0 3.5rem;
+}
+
+footer .btn:hover {
+    background-color: white;
+    border: 1.5px solid #FDE5C2;
 }

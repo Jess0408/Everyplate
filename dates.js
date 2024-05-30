@@ -3,6 +3,7 @@ var modal = document.getElementById('id01');
 var home_icon = document.getElementsByClassName('menu-icon')[0];
 var cart_icon = document.getElementById('shoppingCart');
 var cart = document.getElementById('cart');
+let total = 0;
 
 home_icon.onclick = function() {
   modal.style.display = "block";
@@ -23,10 +24,11 @@ window.onclick = function(event) {
   }
 }
 
+//defalt select date and time
 document.addEventListener("DOMContentLoaded", function() {
   updateDateOptions();
   document.querySelector('.date-option[data-date="today"]').click();
-  document.getElementById('morningBtn').click();
+  document.getElementById('morningBtn').classList.add('active');
 });
 
 function updateDateOptions() {
@@ -82,5 +84,11 @@ document.querySelectorAll('.time-slot').forEach(slot => {
 
 function updateTotalPrice(price) {
   price = Number(price) + Number(document.getElementById('totalPrice').dataset.price);
+  total = price;
+  saveData();
   document.getElementById('totalPrice').textContent = '$' + ' ' + price;
+}
+
+function saveData() {
+  sessionStorage.setItem('totalPrice', JSON.stringify(total));
 }
