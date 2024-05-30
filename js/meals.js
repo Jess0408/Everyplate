@@ -26,5 +26,6 @@ window.onclick = function(event) {
 
   if (event.target == cart) {
     cart.style.display = "none";
+    cart.classList.remove('show');
   }
 }
