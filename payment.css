@@ -236,6 +236,15 @@ form {
     color: rgba(0, 0, 0, 0.8);
 }
 
+.payment-info button.active {
+    border-color: rgba(255, 183, 116, 1);
+    background-color: rgba(255, 183, 116, 0.15);
+}
+
+.payment-info button:hover {
+    border-color: rgba(255, 183, 116, 0.8);
+}
+
 .payment-info label {
     text-align: left;
     align-self: center;

@@ -151,11 +151,19 @@ main {
 
     text-align: center;
     cursor: pointer;
-    transition: 0.3s;
+    transition: transform 0.3s ease;
 }
 
-.card:hover {
-    border-radius: 15px;
+.card {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    padding: 0.625rem;
+    margin: 0.625rem;
+}
+
+.card:hover .plan-card {
+    transform: translateY(-10px);
     box-shadow: 0 1px 10px rgba(0, 0, 0, 0.4);
 }
 

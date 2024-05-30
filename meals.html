@@ -13,7 +13,7 @@
         <div class="header-container">
             <h1>Check out</h1>
         </div>
-        <div><img src="Checkout/Cart.png" alt="cart_icon" class="cart_icon"></div>
+        <div id="shoppingCart"><img src="Checkout/Cart.png" alt="cart_icon" class="cart_icon"></div>
     </header>
     
     <div id="id01" class="modal">
@@ -27,7 +27,24 @@
             </div>
           </div>
         </form>
-      </div>
+    </div>
+
+    <div id="cart" class="shop-cart">
+        <form class="modal-content">
+            <div class="container">
+                <button onclick="document.getElementById('cart').style.display='none'">
+                    <img src="Checkout/Multiply.png" alt="close-icon" class="close-icon">
+                </button>
+                <h1>Shopping Cart</h1>
+                <h2>Plan</h2>
+                <p class="plan">Full 2 Days Pack</p>
+                <ul>
+                    <li>Average 1500 Calories per day</li>
+                    <li>2 Std Breakfasts &amp; Lunches + 5 Dinners</li>
+                </ul>
+            </div>
+        </form>
+    </div>
     
     <nav>
         <ul>

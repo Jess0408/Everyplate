@@ -49,7 +49,7 @@ header {
     height: 2.313rem;
 }
 
-/* Float cancel and delete buttons and add an equal width */
+/* home modal */
 .cancelbtn, .deletebtn {
     border: 0;
     float: left;
@@ -59,20 +59,17 @@ header {
     font-size: 2.25rem;
     font-weight: lighter;
 }
-  
-/* Add a color to the cancel button */
+
 .cancelbtn {
     color: black;
     padding-left: 7rem;
 }
-  
-/* Add a color to the delete button */
+
 .deletebtn {
     color: #FF1818;
     padding-right: 7rem;
 }
-  
-/* Add padding and center-align text to the container */
+
 .container {
     text-align: center;
 }
@@ -81,36 +78,96 @@ header {
     font-size: 4rem;
     font-weight: bold;
 }
-  
-/* The Modal (background) */
+
 .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1001; /* Sit on top */
+    display: none;
+    position: fixed;
+    z-index: 1001;
     left: 0;
     top: 0;
-    width: 100%; /* Full width */
+    width: 100%;
+    height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     padding-top: 50px;
     transition: 600ms;
 }
-  
-  /* Modal Content/Box */
-.modal-content {
+
+.modal .modal-content {
     background-color: white;
-    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    margin: 5% auto 15% auto; 
     border-radius: 20px;
-    width: 37.5rem; /* Could be more or less, depending on screen size */
+    width: 37.5rem;
     height: 27rem;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+/* home modal */
 
 .cart_icon {
     width: 2.188rem;
     height: 2.313rem;
 }
+
+/* Shopping cart modal */
+.shop-cart .container button {
+    background: none;
+    border: none;
+    
+    margin-left: 17rem;
+    margin-top: 1.5rem;
+}
+
+.shop-cart .container h2{
+    font-size: 2rem;
+    font-style: italic;
+    margin: 2.3rem 0;
+    padding-right: 18.5rem;
+}
+
+.shop-cart .container h1 {
+    font-size: 2.75rem;
+    width: 15rem;
+    margin: -1.25rem 0 3rem 2.3rem;
+}
+
+.shop-cart .container p {
+    font-size: 1.75rem;
+    width: 15rem;
+    margin: 2.3rem;
+}
+
+.shop-cart .container ul {
+    width: 16rem;
+    margin: 2.3rem;
+    padding-left: 1.5rem;
+    font-size: 1.25rem;
+    text-align: left;
+}
+
+.shop-cart .container li {
+    margin-bottom: 1.5rem;
+}
+
+.shop-cart {
+    display: none;
+    position: fixed;
+    z-index: 1001;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: 600ms;
+}
+
+.shop-cart .modal-content {
+    float: right;
+    background-color: white;
+    border-radius: 10px;
+    width: 28rem;
+    height: 100%;
+    padding-left: 4.5rem;
+}
+/* Shopping cart modal */
 
 nav ul {
     list-style: none;
@@ -168,13 +225,15 @@ nav .line {
     border: 1.5px solid rgba(173, 193, 120, 1);
 }
 
+/* Preference button modal */
 .preference {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1001; /* Sit on top */
+    display: none;
+    position: fixed;
+    z-index: 1001;
     left: 0;
     top: 0;
-    width: 100%; /* Full width */
+    width: 100%;
+    height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     padding-top: 50px;
     transition: 600ms;
@@ -182,9 +241,9 @@ nav .line {
 
 .preference .modal-content {
     background-color: white;
-    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    margin: 5% auto 15% auto;
     border-radius: 20px;
-    width: 25.938rem; /* Could be more or less, depending on screen size */
+    width: 25.938rem;
     height: 33.125rem;
     display: flex;
     justify-content: center;
@@ -224,6 +283,7 @@ nav .line {
     color: #FF1818;
     background-color: white;
 }
+/* Preference button modal */
 
 main {
     padding: 1.25rem;

@@ -13,7 +13,7 @@
         <div class="header-container">
             <h1>Check out</h1>
         </div>
-        <div><img src="Checkout/Cart.png" alt="cart_icon" class="cart_icon"></div>
+        <div id="shoppingCart"><img src="Checkout/Cart.png" alt="cart_icon" class="cart_icon"></div>
     </header>
 
     <div id="id01" class="modal">
@@ -27,7 +27,30 @@
             </div>
           </div>
         </form>
-      </div>
+    </div>
+
+    <div id="cart" class="shop-cart">
+        <form class="modal-content">
+            <div class="container">
+                <button onclick="document.getElementById('cart').style.display='none'">
+                    <img src="Checkout/Multiply.png" alt="close-icon" class="close-icon">
+                </button>
+                <h1>Shopping Cart</h1>
+                <h2>Plan</h2>
+                <p class="plan">Full 2 Days Pack</p>
+                <ul>
+                    <li>Average 1500 Calories per day</li>
+                    <li>2 Std Breakfasts &amp; Lunches + 5 Dinners</li>
+                </ul>
+
+                <h2>Meals</h2>
+                <p class="plan">2 Days Std Meals</p>
+                <ul>
+                    <li>No meal changed</li>
+                </ul>
+            </div>
+        </form>
+    </div>
     
     <nav>
         <ul>
@@ -65,30 +88,41 @@
             <section class="time-selection">
                 <h2>Select Time</h2>
                 <div class="time-options">
-                    <button class="time-option active"><img src="Checkout/Sunrise.png" alt="Sunrise" class="time-icon"><p>Morning</p></button>
-                    <button class="time-option"><img src="Checkout/Sun.png" alt="Sun" class="time-icon"><p>Afternoon</p></button>
-                    <button class="time-option"><img src="Checkout/Sunset.png" alt="Sunset" class="time-icon"><p>Evening</p></button>
+                    <button id="morningBtn" class="time-option" data-time="morning">
+                        <img src="Checkout/Sunrise.png" alt="Sunrise" class="time-icon">
+                        <p>Morning</p>
+                    </button>
+
+                    <button id="afternoonBtn" class="time-option" data-time="afternoon">
+                        <img src="Checkout/Sun.png" alt="Sun" class="time-icon">
+                        <p>Afternoon</p>
+                    </button>
+
+                    <button id="eveningBtn" class="time-option" data-time="evening">
+                        <img src="Checkout/Sunset.png" alt="Sunset" class="time-icon">
+                        <p>Evening</p>
+                    </button>
                 </div>
             </section>
 
             <div class="morning">
                 <p class="time">Time starting 9am - 12pm</p>
-                <div class="time-slot">
+                <div class="time-slot" data-price="10.00">
                     <p class="time-zone">9am - 12pm</p>
                     <p class="window">3h window</p>
                     <p class="price">$10.00</p>
                 </div>
-                <div class="time-slot">
+                <div class="time-slot" data-price="13.00">
                     <p class="time-zone">9am - 10am</p>
                     <p class="window">1h window</p>
                     <p class="price">$13.00</p>
                 </div>
-                <div class="time-slot">
+                <div class="time-slot" data-price="13.00">
                     <p class="time-zone">10am - 11am</p>
                     <p class="window">1h window</p>
                     <p class="price">$13.00</p>
                 </div>
-                <div class="time-slot">
+                <div class="time-slot" data-price="13.00">
                     <p class="time-zone">11am - 12am</p>
                     <p class="window">1h window</p>
                     <p class="price">$13.00</p>
@@ -97,47 +131,47 @@
 
             <div class="afternoon">
                 <p class="time">Time starting 12am - 6pm</p>
-                <div class="time-slot">
+                <div class="time-slot" data-price="10.00">
                     <p class="time-zone">12am - 6pm</p>
                     <p class="window">6h window</p>
                     <p class="price">$10.00</p>
                 </div>
-                <div class="time-slot">
+                <div class="time-slot" data-price="11.00">
                     <p class="time-zone">12am - 3pm</p>
                     <p class="window">3h window</p>
                     <p class="price">$11.00</p>
                 </div>
-                <div class="time-slot">
+                <div class="time-slot" data-price="11.00">
                     <p class="time-zone">3pm - 6pm</p>
                     <p class="window">3h window</p>
                     <p class="price">$11.00</p>
                 </div>
-                <div class="time-slot">
+                <div class="time-slot" data-price="13.00">
                     <p class="time-zone">12am - 1pm</p>
                     <p class="window">1h window</p>
                     <p class="price">$13.00</p>
                 </div>
-                <div class="time-slot">
+                <div class="time-slot" data-price="13.00">
                     <p class="time-zone">1pm - 2pm</p>
                     <p class="window">1h window</p>
                     <p class="price">$13.00</p>
                 </div>
-                <div class="time-slot">
+                <div class="time-slot" data-price="13.00">
                     <p class="time-zone">2pm - 3pm</p>
                     <p class="window">1h window</p>
                     <p class="price">$13.00</p>
                 </div>
-                <div class="time-slot">
+                <div class="time-slot" data-price="13.00">
                     <p class="time-zone">3pm - 4pm</p>
                     <p class="window">1h window</p>
                     <p class="price">$13.00</p>
                 </div>
-                <div class="time-slot">
+                <div class="time-slot" data-price="13.00">
                     <p class="time-zone">4pm - 5pm</p>
                     <p class="window">1h window</p>
                     <p class="price">$13.00</p>
                 </div>
-                <div class="time-slot">
+                <div class="time-slot" data-price="13.00">
                     <p class="time-zone">5pm - 6pm</p>
                     <p class="window">1h window</p>
                     <p class="price">$13.00</p>
@@ -146,27 +180,27 @@
 
             <div class="evening">
                 <p class="time">Time starting 6pm - 10pm</p>
-                <div class="time-slot">
+                <div class="time-slot" data-price="10.00">
                     <p class="time-zone">6pm - 10pm</p>
                     <p class="window">4h window</p>
                     <p class="price">$10.00</p>
                 </div>
-                <div class="time-slot">
+                <div class="time-slot" data-price="13.00">
                     <p class="time-zone">6pm - 7pm</p>
                     <p class="window">1h window</p>
                     <p class="price">$13.00</p>
                 </div>
-                <div class="time-slot">
+                <div class="time-slot" data-price="13.00">
                     <p class="time-zone">7pm - 8pm</p>
                     <p class="window">1h window</p>
                     <p class="price">$13.00</p>
                 </div>
-                <div class="time-slot">
+                <div class="time-slot" data-price="13.00">
                     <p class="time-zone">8pm - 9pm</p>
                     <p class="window">1h window</p>
                     <p class="price">$13.00</p>
                 </div>
-                <div class="time-slot">
+                <div class="time-slot" data-price="13.00">
                     <p class="time-zone">9pm - 10pm</p>
                     <p class="window">1h window</p>
                     <p class="price">$13.00</p>
@@ -177,7 +211,7 @@
 
     <footer>
         <button onclick="document.location='meals.html'" class="btn">Back</button>
-        <h2>$ 0</h2>
+        <h2 id="totalPrice" data-price="59.95">$ 59.95</h2>
         <button onclick="document.location='payment.html'" class="btn">Next</button>
     </footer>
 
