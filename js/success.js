@@ -6,11 +6,11 @@ document.addEventListener('DOMContentLoaded', () => {
         const confetti = document.createElement('div');
         confetti.classList.add('confetti');
         confetti.style.setProperty('--color', colors[Math.floor(Math.random() * colors.length)]);
-        
+
         // Initial position: center of the screen
         confetti.style.left = '50vw';
         confetti.style.top = '20vh';
-        
+
         // Random movement direction
         const xMove = (Math.random() * 200 - 100) + 'vw';
         const yMove = (Math.random() * 200 - 150) + 'vh';

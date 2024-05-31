@@ -15,7 +15,7 @@ body {
     background-size: cover;
 }
 
-h1{
+h1 {
     font-size: 2.6rem;
     font-weight: 400;
 }
@@ -40,7 +40,7 @@ header {
 
 .header-container {
     display: flex;
-    justify-content: center; 
+    justify-content: center;
     align-items: end;
 }
 
@@ -50,8 +50,9 @@ header {
     left: 1.9rem;
 }
 
-  /* Float cancel and delete buttons and add an equal width */
-  .cancelbtn, .deletebtn {
+/* Float cancel and delete buttons and add an equal width */
+.cancelbtn,
+.deletebtn {
     border: 0;
     float: left;
     width: 50%;
@@ -59,55 +60,61 @@ header {
     background-color: white;
     font-size: 2.25rem;
     font-weight: lighter;
-  }
-  
-  /* Add a color to the cancel button */
-  .cancelbtn {
+}
+
+/* Add a color to the cancel button */
+.cancelbtn {
     color: black;
     padding-left: 7rem;
-  }
-  
-  /* Add a color to the delete button */
-  .deletebtn {
+}
+
+/* Add a color to the delete button */
+.deletebtn {
     color: #FF1818;
     padding-right: 7rem;
-  }
-  
-  /* Add padding and center-align text to the container */
-  .container {
-    text-align: center;
-  }
+}
 
-  .container h1 {
+/* Add padding and center-align text to the container */
+.container {
+    text-align: center;
+}
+
+.container h1 {
     font-size: 4rem;
     font-weight: bold;
-  }
-  
-  /* The Modal (background) */
-  .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1001; /* Sit on top */
+}
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1001;
+    /* Sit on top */
     left: 0;
     top: 0;
-    width: 100%; /* Full width */
+    width: 100%;
+    /* Full width */
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     padding-top: 50px;
     transition: 600ms;
-  }
-  
-  /* Modal Content/Box */
-  .modal-content {
+}
+
+/* Modal Content/Box */
+.modal-content {
     background-color: white;
-    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    margin: 5% auto 15% auto;
+    /* 5% from the top, 15% from the bottom and centered */
     border-radius: 20px;
-    width: 37.5rem; /* Could be more or less, depending on screen size */
+    width: 37.5rem;
+    /* Could be more or less, depending on screen size */
     height: 27rem;
     display: flex;
     justify-content: center;
     align-items: center;
-  }
+}
 
 .home_icon {
     width: 2.188rem;
@@ -170,7 +177,8 @@ form {
     font-weight: lighter;
 }
 
-.contact-info label, .address-info label {
+.contact-info label,
+.address-info label {
     text-align: left;
     align-self: center;
     padding-left: 1.5rem;
@@ -296,9 +304,11 @@ form {
 }
 
 .plan-info .line {
-    border: none; /* 去掉默认边框 */
+    border: none;
+    /* 去掉默认边框 */
     background-image: linear-gradient(to right, black 50%, rgba(255, 255, 255, 0) 0%);
-    background-size: 0.625rem 0.094rem; /* 线条长度和间距 */
+    background-size: 0.625rem 0.094rem;
+    /* 线条长度和间距 */
     background-repeat: repeat-x;
     padding: 0 15.5rem 0 15.5rem;
     margin-top: 1rem;

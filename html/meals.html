@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="../css/meals.css">
     <title>Checkout Meals</title>
 </head>
+
 <body>
     <header>
         <div class="menu-icon"><img src="../Checkout/home.png" alt="home_icon" class="home_icon"></div>
@@ -15,17 +17,19 @@
         </div>
         <div id="shoppingCart"><img src="../Checkout/Cart.png" alt="cart_icon" class="cart_icon"></div>
     </header>
-    
+
     <div id="id01" class="modal">
         <form class="modal-content">
-          <div class="container">
-            <h1>Will not Save!</h1>
-      
-            <div class="clearfix">
-              <button type="button" class="deletebtn" onclick="document.location='../index.html'">Continue</button>
-              <button type="button" class="cancelbtn" onclick="document.getElementById('id01').style.display='none'">Cancel</button>
+            <div class="container">
+                <h1>Will not Save!</h1>
+
+                <div class="clearfix">
+                    <button type="button" class="deletebtn"
+                        onclick="document.location='../index.html'">Continue</button>
+                    <button type="button" class="cancelbtn"
+                        onclick="document.getElementById('id01').style.display='none'">Cancel</button>
+                </div>
             </div>
-          </div>
         </form>
     </div>
 
@@ -45,7 +49,7 @@
             </div>
         </form>
     </div>
-    
+
     <nav>
         <ul>
             <li><a href="plans.html" class="previous">Plans<span class="line"></span></a></li>
@@ -69,8 +73,8 @@
                 <button class="option">Customize</button>
                 <button class="close-btn" onclick="document.getElementById('pre').style.display='none'">Close</button>
             </div>
-          </div>
-        </form>
+    </div>
+    </form>
     </div>
 
     <main>
@@ -80,7 +84,7 @@
                 <h2>Day 1</h2>
                 <h2>Day 2</h2>
             </div>
-            
+
             <div class="genre">
                 <h2>Breakfast</h2>
 
@@ -92,7 +96,7 @@
                     </div>
                     <button class="change-btn">Change</button>
                 </div>
-    
+
                 <div class="meal-card">
                     <div class="meal-info">
                         <p class="name">Garlic Chicken Salad</p>
@@ -114,7 +118,7 @@
                     </div>
                     <button class="change-btn">Change</button>
                 </div>
-    
+
                 <div class="meal-card">
                     <div class="meal-info">
                         <p class="name">Asian Beef Tacos</p>
@@ -135,7 +139,7 @@
                         <img src="../Checkout/rice.png" alt="Chicken Curry Rice">
                     </div>
                 </div>
-    
+
                 <div class="meal-card">
                     <div class="meal-info">
                         <p class="name">Chicken Curry Rice</p>
@@ -153,7 +157,8 @@
         <h2>$ 59.95</h2>
         <button onclick="document.location='dates.html'" class="btn">Next</button>
     </footer>
-    
+
     <script src="../js/meals.js"></script>
 </body>
+
 </html>

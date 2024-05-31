@@ -95,6 +95,7 @@ h1 {
     0% {
         transform: translate(0, 0) rotate(0deg);
     }
+
     100% {
         transform: translate(var(--x-move), var(--y-move)) rotate(360deg);
     }

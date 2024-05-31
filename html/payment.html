@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="../css/payment.css">
     <title>Checkout Payment</title>
 </head>
+
 <body>
     <header>
         <div class="menu-icon"><img src="../Checkout/home.png" alt="home_icon" class="home_icon"></div>
@@ -17,17 +19,19 @@
 
     <div id="id01" class="modal">
         <form class="modal-content">
-          <div class="container">
-            <h1>Will not Save!</h1>
-      
-            <div class="clearfix">
-              <button type="button" class="deletebtn" onclick="document.location='../index.html'">Continue</button>
-              <button type="button" class="cancelbtn" onclick="document.getElementById('id01').style.display='none'">Cancel</button>
+            <div class="container">
+                <h1>Will not Save!</h1>
+
+                <div class="clearfix">
+                    <button type="button" class="deletebtn"
+                        onclick="document.location='../index.html'">Continue</button>
+                    <button type="button" class="cancelbtn"
+                        onclick="document.getElementById('id01').style.display='none'">Cancel</button>
+                </div>
             </div>
-          </div>
         </form>
     </div>
-    
+
     <nav>
         <ul>
             <li><a href="plans.html" class="previous">Plans<span class="line"></span></a></li>
@@ -37,7 +41,7 @@
             <li><a href="#">Confirmation</a></li>
         </ul>
     </nav>
-    
+
     <main>
         <div class="info">
             <section class="contact-info small-info">
@@ -63,13 +67,15 @@
                 <h2>Address</h2>
                 <form>
                     <label for="street">Street</label>
-                    <input type="text" id="street" name="Street" placeholder="123 Bourke Street" onclick="clearInput(this)">
+                    <input type="text" id="street" name="Street" placeholder="123 Bourke Street"
+                        onclick="clearInput(this)">
 
                     <label for="suburb">Suburb</label>
                     <input type="text" id="suburb" name="Suburb" placeholder="Carlton" onclick="clearInput(this)">
 
                     <label for="postal-code">Postal Code</label>
-                    <input type="text" id="postal-code" name="Postal-code" placeholder="3xxx" onclick="clearInput(this)">
+                    <input type="text" id="postal-code" name="Postal-code" placeholder="3xxx"
+                        onclick="clearInput(this)">
 
                     <label for="postal-code">State</label>
                     <input type="text" id="state" name="state" placeholder="Victoria" onclick="clearInput(this)">
@@ -86,13 +92,16 @@
                     <h4>Card Details</h4>
                     <form>
                         <label for="street">Card Number</label>
-                        <input type="text" id="card-number" name="card-number" placeholder="1234 5678 9012 3456" onclick="clearInput(this)">
+                        <input type="text" id="card-number" name="card-number" placeholder="1234 5678 9012 3456"
+                            onclick="clearInput(this)">
 
                         <label for="suburb">Expiration Date</label>
-                        <input type="text" id="expiration-date" name="expiration-date" placeholder="MM/YYYY" onclick="clearInput(this)">
+                        <input type="text" id="expiration-date" name="expiration-date" placeholder="MM/YYYY"
+                            onclick="clearInput(this)">
 
                         <label for="postal-code">Name On Card</label>
-                        <input type="text" id="card-name" name="card-name" placeholder="Name Surname" onclick="clearInput(this)">
+                        <input type="text" id="card-name" name="card-name" placeholder="Name Surname"
+                            onclick="clearInput(this)">
 
                         <label for="postal-code">CVV</label>
                         <input type="number" id="cvv" name="cvv" placeholder="123" onclick="clearInput(this)">
@@ -125,4 +134,5 @@
 
     <script src="../js/payment.js"></script>
 </body>
+
 </html>

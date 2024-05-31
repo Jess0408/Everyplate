@@ -4,7 +4,7 @@ document.getElementById('totalPrice').textContent = 'Total' + ' ' + '$' + ' ' + 
 
 // Get the information
 var urlParams = new URLSearchParams(window.location.search);
-       
+
 document.getElementById('title').textContent = JSON.parse(sessionStorage.getItem('title'));
 document.getElementById('surname').textContent = JSON.parse(sessionStorage.getItem('surname'));
 document.getElementById('mobile').textContent = JSON.parse(sessionStorage.getItem('mobile'));
@@ -20,7 +20,7 @@ document.getElementById('card-name').textContent = JSON.parse(sessionStorage.get
 document.getElementById('cvv').textContent = JSON.parse(sessionStorage.getItem('cvv'));
 
 //defalt choose card button
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const defaultButton = document.getElementById('cardBtn');
     defaultButton.classList.add('active');
 });

@@ -9,12 +9,12 @@ var home_icon = document.getElementsByClassName('menu-icon')[0];
 var nextBtn = document.getElementById('nextBtn');
 let contentFilled = false;
 
-home_icon.onclick = function() {
+home_icon.onclick = function () {
   modal.style.display = "block";
 }
 
 // When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
+window.onclick = function (event) {
   if (event.target == modal) {
     modal.style.display = "none";
   }
@@ -23,15 +23,15 @@ window.onclick = function(event) {
 //click input, then the placeholder disappear
 let input_length = document.getElementsByTagName('input').length;
 
-for (let i = 0; i < input_length; i++){
+for (let i = 0; i < input_length; i++) {
   const input = document.getElementsByTagName('input')[i];
   const originalPlaceholder = input.placeholder;
 
-  input.addEventListener('focus', function() {
+  input.addEventListener('focus', function () {
     this.placeholder = '';
   });
 
-  input.addEventListener('blur', function() {
+  input.addEventListener('blur', function () {
     this.placeholder = originalPlaceholder;
   });
 }
@@ -53,7 +53,7 @@ function saveData() {
   var cvv = document.getElementById('cvv').value;
 
   // check if the value are not null
-  if (!title || !surname || !mobile || !home || !email || !street || !suburb || !postalCode || !state || !cardNumber || !cardName || !expiration || !cvv ) {
+  if (!title || !surname || !mobile || !home || !email || !street || !suburb || !postalCode || !state || !cardNumber || !cardName || !expiration || !cvv) {
     alert('Please fill all the information.');
     return;
   } else {
@@ -81,19 +81,19 @@ nextBtn.addEventListener('click', () => {
   saveData();
   if (contentFilled) {
     window.location.href = 'confirmation.html';
-  } 
+  }
 });
 
 //defalt choose card button
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
   const defaultButton = document.getElementById('cardBtn');
   defaultButton.classList.add('active');
 
   const buttons = document.querySelectorAll('.payment-info button');
   buttons.forEach(button => {
-      button.addEventListener('click', function() {
-          buttons.forEach(btn => btn.classList.remove('active'));
-          this.classList.add('active');
-      });
+    button.addEventListener('click', function () {
+      buttons.forEach(btn => btn.classList.remove('active'));
+      this.classList.add('active');
+    });
   });
 });
