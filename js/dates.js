@@ -91,10 +91,14 @@ document.querySelectorAll('.time-slot').forEach(slot => {
 });
 
 // Check user click the time-plot
-nextBtn.addEventListener('click', () => {
-  if (contentClicked) {
-    window.location.href = 'payment.html';
-  }
+document.addEventListener("DOMContentLoaded", function () {
+  nextBtn.addEventListener('click', () => {
+    if (contentClicked) {
+      window.location.href = 'payment.html';
+    } else {
+      alert('Please select delivery time.');
+    }
+  })
 });
 
 // Count total price
