@@ -3,7 +3,9 @@ var modal = document.getElementById('id01');
 var home_icon = document.getElementsByClassName('menu-icon')[0];
 var cart_icon = document.getElementById('shoppingCart');
 var cart = document.getElementById('cart');
+var nextBtn = document.getElementById('nextBtn');
 let total = 0;
+let contentClicked = false;
 
 home_icon.onclick = function() {
   modal.style.display = "block";
@@ -28,9 +30,10 @@ window.onclick = function(event) {
 document.addEventListener("DOMContentLoaded", function() {
   updateDateOptions();
   document.querySelector('.date-option[data-date="today"]').click();
-  document.getElementById('morningBtn').classList.add('active');
+  document.getElementById('morningBtn').click();
 });
 
+// Get the date
 function updateDateOptions() {
 const dateOptions = document.querySelectorAll('.date-option');
 for (let i = 0; i < dateOptions.length; i++) {
@@ -43,6 +46,7 @@ for (let i = 0; i < dateOptions.length; i++) {
 }
 }
 
+// Update the date
 document.querySelectorAll('.date-option').forEach(option => {
   option.addEventListener('click', function() {
       document.querySelectorAll('.date-option').forEach(other => {
@@ -54,6 +58,7 @@ document.querySelectorAll('.date-option').forEach(option => {
   });
 });
 
+// Time option change listen
 document.querySelectorAll('.time-option').forEach(option => {
   option.addEventListener('click', function() {
       document.querySelectorAll('.time-option').forEach(other => {
@@ -65,6 +70,7 @@ document.querySelectorAll('.time-option').forEach(option => {
   });
 });
 
+// Time option button
 function showTimePeriod(timePeriod) {
   document.querySelectorAll('.morning, .afternoon, .evening').forEach(element => {
       element.style.display = 'none';
@@ -72,6 +78,7 @@ function showTimePeriod(timePeriod) {
   document.querySelector('.' + timePeriod).style.display = 'block';
 }
 
+// Time-plot selected time-slot changed
 document.querySelectorAll('.time-slot').forEach(slot => {
   slot.addEventListener('click', function() {
       document.querySelectorAll('.time-slot').forEach(s => {
@@ -79,9 +86,18 @@ document.querySelectorAll('.time-slot').forEach(slot => {
       });
       this.classList.add('active');
       updateTotalPrice(this.dataset.price);
+      contentClicked = true;
   });
 });
 
+// Check user click the time-plot
+nextBtn.addEventListener('click', () => {
+  if (contentClicked) {
+    window.location.href = 'payment.html';
+  } 
+});
+
+// Count total price
 function updateTotalPrice(price) {
   price = Number(price) + Number(document.getElementById('totalPrice').dataset.price);
   total = price;
@@ -89,6 +105,8 @@ function updateTotalPrice(price) {
   document.getElementById('totalPrice').textContent = '$' + ' ' + price;
 }
 
+// Store price for next page
 function saveData() {
   sessionStorage.setItem('totalPrice', JSON.stringify(total));
 }
+
