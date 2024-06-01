@@ -56,6 +56,18 @@ function saveData() {
   if (!title || !surname || !mobile || !home || !email || !street || !suburb || !postalCode || !state || !cardNumber || !cardName || !expiration || !cvv) {
     alert('Please fill all the information.');
     return;
+  }else if (mobile.length != 10) {
+    alert('Please fill the mobile number correctly.');
+    return;
+  }else if (postalCode.length != 4) {
+    alert('Please fill the post code correctly.');
+    return;
+  }else if (cardNumber != 16) {
+    alert('Please fill the card number correctly.');
+    return;
+  }else if (cvv != 3) {
+    alert('Please fill the cvv correctly.');
+    return;
   } else {
     contentFilled = true;
   }
