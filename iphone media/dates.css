@@ -1,0 +1,109 @@
+@media (max-width: 768px) {
+    main {
+        margin: 0 auto !important;
+        padding-bottom: 5rem !important;
+    }
+
+    .date-option,
+    .time-option {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .time-slot {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .date-selection h2::before {
+        content: '';
+        display: block;
+        margin: 0.5em auto;
+        height: 1px;
+        overflow: hidden;
+    }
+
+    .date-selection,
+    .time-selection {
+        display: block;
+    }
+
+    .date-selection h2,
+    .time-selection h2 {
+        text-align: center;
+        margin: 1rem 1rem 1rem 1rem;
+        font-size: 2rem;
+    }
+
+    .date-option p {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .date-options {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .date-option {
+        flex: 1;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .time-selection {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .time-options {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 0.5rem;
+        margin-top: 1rem;
+    }
+
+    .time-option {
+        flex: 1;
+        text-align: center;
+        padding: 0.5rem;
+        background-color: white;
+        cursor: pointer;
+    }
+
+    .time-option img {
+        width: 100%;
+        height: auto;
+    }
+
+    .morning,
+    .afternoon,
+    .evening {
+        padding: 0 1rem;
+    }
+
+    .time-slot {
+        background-color: white;
+        border: 1px solid #ccc;
+        padding: 0.5rem;
+        margin-bottom: 0.5rem;
+        width: 100%;
+    }
+
+
+    .time-selection h2 {
+        font-size: 2rem;
+    }
+
+    .time-option {
+        width: 100%;
+    }
+
+}

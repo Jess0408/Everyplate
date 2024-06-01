@@ -62,10 +62,10 @@ function saveData() {
   }else if (postalCode.length != 4) {
     alert('Please fill the post code correctly.');
     return;
-  }else if (cardNumber != 16) {
+  }else if (cardNumber.length != 16) {
     alert('Please fill the card number correctly.');
     return;
-  }else if (cvv != 3) {
+  }else if (cvv.length != 3) {
     alert('Please fill the cvv correctly.');
     return;
   } else {

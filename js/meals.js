@@ -29,3 +29,15 @@ window.onclick = function (event) {
     cart.classList.remove('show');
   }
 }
+
+// Small screen change day
+var left = document.getElementById('left');
+var right = document.getElementById('right');
+
+left.onclick = function () {
+  document.getElementById('day-small').textContent = 'Day 1';
+}
+
+right.onclick = function () {
+  document.getElementById('day-small').textContent = 'Day 2';
+}

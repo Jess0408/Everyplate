@@ -285,9 +285,14 @@ nav .line {
     font-weight: lighter;
     color: #FF1818;
     background-color: white;
+    cursor: pointer;
 }
 
 /* Preference button modal */
+
+.day-selection {
+    display: none;
+}
 
 main {
     padding: 1.25rem;
