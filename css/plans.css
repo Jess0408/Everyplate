@@ -107,6 +107,19 @@ header {
     align-items: center;
 }
 
+.small-nav {
+    display: none;
+}
+
+.small-nav h1 {
+    text-align: center;
+    font-size: 2.25rem;
+}
+
+.close {
+    display: none;
+}
+
 nav ul {
     list-style: none;
     display: flex;

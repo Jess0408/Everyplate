@@ -185,10 +185,8 @@ main {
 
 .plan .line {
     border: none;
-    /* 去掉默认边框 */
     background-image: linear-gradient(to right, black 50%, rgba(255, 255, 255, 0) 0%);
     background-size: 0.625rem 0.094rem;
-    /* 线条长度和间距 */
     background-repeat: repeat-x;
     padding: 0 15.5rem 0 15.5rem;
     margin-top: 1rem;

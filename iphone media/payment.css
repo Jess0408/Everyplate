@@ -1,6 +1,7 @@
 @media (max-width: 768px) {
-    main{
+    main {
         margin: 0 auto !important;
+        padding-bottom: 6rem !important;
         display: block;
     }
 
@@ -8,20 +9,51 @@
         grid-column: 1;
         grid-row: auto;
         min-width: 50vw;
+        width: 95%;
+        box-shadow: none;
+        border: 1px solid #A3A3A3;
     }
 
     .info {
         grid-template-columns: 1fr;
-        max-width: 100%;
     }
 
     section {
-        margin: 0 auto;
-        box-sizing: border-box;
+        margin: 1.5rem auto;
         padding: 1rem;
+        width: 95% !important;
     }
 
-    .line {
-        display: none;
+    input {
+        width: 90% !important;
+    }
+
+    .contact-info label,
+    .address-info label {
+        font-size: 1.18rem;
+    }
+
+    .payment-info {
+        grid-template-rows: 5% 20%;
+    }
+
+    .payment-info button {
+        width: 10.5rem;
+        height: 2.5rem;
+        margin-top: 0;
+        margin-bottom: 1rem;
+        display: inline;
+    }
+
+    .info form {
+        margin-top: 1rem;
+    }
+
+    .payment-info label {
+        font-size: 0.9rem;
+    }
+
+    .plan-info .line {
+        padding: 0 11rem 0 11rem;
     }
 }

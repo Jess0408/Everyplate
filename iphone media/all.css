@@ -16,6 +16,46 @@
         background-size: cover;
     }
 
+    .small-nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10rem;
+        width: 100%;
+    }
+
+    .small-nav h1 {
+        font-size: 2.25rem;
+    }
+
+    .close,
+    .open {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin-top: 0.5rem;
+    }
+
+    .close .bord,
+    .open .bord {
+        border-top: 1.25px solid black;
+        width: 13.5rem;
+    }
+
+    .close button,
+    .open button {
+        width: 81px;
+        height: auto;
+        border-top: 0 !important;
+        border: 1px solid black;
+        background: none;
+        cursor: pointer;
+    }
+
+    .large-nav {
+        display: none;
+    }
+
     nav {
         margin-bottom: 8%;
     }

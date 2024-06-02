@@ -41,3 +41,14 @@ left.onclick = function () {
 right.onclick = function () {
   document.getElementById('day-small').textContent = 'Day 2';
 }
+
+// Small screen nav
+document.getElementById('expand').onclick = function () {
+  document.getElementById('large-nav').style.display = 'block';
+  document.getElementById('small-nav').style.display = 'none';
+}
+
+document.getElementById('collapse').onclick = function () {
+  document.getElementById('large-nav').style.display = 'none';
+  document.getElementById('small-nav').style.display = 'block';
+}

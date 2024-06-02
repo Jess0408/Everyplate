@@ -123,6 +123,19 @@ header {
     height: 2.313rem;
 }
 
+.small-nav {
+    display: none;
+}
+
+.small-nav h1 {
+    text-align: center;
+    font-size: 2.25rem;
+}
+
+.close {
+    display: none;
+}
+
 nav ul {
     list-style: none;
     display: flex;
@@ -227,8 +240,8 @@ form {
 
 .payment-info {
     height: auto;
-    grid-template-rows: 10% 20%;
-    gap: 0.75rem;
+    grid-template-rows: 6% 20%;
+    gap: 0.55rem;
 }
 
 .clearfix::after {
@@ -257,13 +270,11 @@ form {
     height: 2.5rem;
     border-radius: 20px;
     margin-left: 1.5rem;
-    margin-top: 0.625rem;
-    margin-bottom: 0.5rem;
+    margin-top: -0.325rem;
+    margin-bottom: 5rem;
     font-size: 1rem;
     font-weight: lighter;
     color: rgba(0, 0, 0, 0.8);
-
-    display: block;
 }
 
 .payment-info button.active {
@@ -282,6 +293,11 @@ form {
     font-size: 1.15rem;
 }
 
+.payment-info input {
+    text-align: left;
+    align-self: center;
+}
+
 .card {
     display: grid;
     grid-template-rows: 12% 80%;
@@ -290,7 +306,7 @@ form {
 
 .plan-info {
     width: 37.55rem;
-    height: 31.25rem;
+    height: 32.25rem;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding-left: 3.125rem;
 }
@@ -322,10 +338,8 @@ form {
 
 .plan-info .line {
     border: none;
-    /* 去掉默认边框 */
     background-image: linear-gradient(to right, black 50%, rgba(255, 255, 255, 0) 0%);
     background-size: 0.625rem 0.094rem;
-    /* 线条长度和间距 */
     background-repeat: repeat-x;
     padding: 0 15.5rem 0 15.5rem;
     margin-top: 1rem;
@@ -352,8 +366,6 @@ footer {
     width: 100%;
     height: 4.5rem;
     bottom: 0;
-
-    overflow-x: hidden;
 }
 
 footer h2 {

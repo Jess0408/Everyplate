@@ -33,3 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Trigger the confetti animation on page load
     createConfetti();
 });
+
+// Update the total price
+let price = JSON.parse(sessionStorage.getItem('totalPrice'));
+document.getElementById('totalPrice').textContent = price;

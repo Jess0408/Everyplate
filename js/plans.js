@@ -14,3 +14,14 @@ window.onclick = function (event) {
     modal.style.display = "none";
   }
 }
+
+// Small screen nav
+document.getElementById('expand').onclick = function () {
+  document.getElementById('large-nav').style.display = 'block';
+  document.getElementById('small-nav').style.display = 'none';
+}
+
+document.getElementById('collapse').onclick = function () {
+  document.getElementById('large-nav').style.display = 'none';
+  document.getElementById('small-nav').style.display = 'block';
+}

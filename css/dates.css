@@ -173,6 +173,19 @@ header {
 
 /* Shopping cart modal */
 
+.small-nav {
+    display: none;
+}
+
+.small-nav h1 {
+    text-align: center;
+    font-size: 2.25rem;
+}
+
+.close {
+    display: none;
+}
+
 nav ul {
     list-style: none;
     display: flex;
@@ -335,6 +348,7 @@ hr {
     background-color: rgba(255, 183, 116, 0.15);
 }
 
+.time-slot:hover,
 .date-option:hover,
 .time-option:hover {
     border: 1px solid rgba(255, 183, 116, 1);
