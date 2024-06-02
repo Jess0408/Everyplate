@@ -52,3 +52,10 @@ document.getElementById('collapse').onclick = function () {
   document.getElementById('large-nav').style.display = 'none';
   document.getElementById('small-nav').style.display = 'block';
 }
+
+// Change button onclick
+
+var change = document.getElementById('change-btn');
+change.onclick = function () {
+  window.location.href = 'check_menu.html';
+}
